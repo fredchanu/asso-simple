@@ -3,7 +3,7 @@ backend:
   repo: fredchanu/asso-simple
   branch: main
   base_url: https://assosimple.netlify.app
-  auth_endpoint: /.netlify/functions/auth
+  auth_endpoint: auth
 
 
 
