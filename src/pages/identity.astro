@@ -1,0 +1,27 @@
+---
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Création du compte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <p>Ouverture de la création de compte…</p>
+
+    <script type="module">
+      import netlifyIdentity from "netlify-identity-widget";
+
+      netlifyIdentity.init();
+
+      // Ouvre DIRECTEMENT la création de compte (pas le login)
+      netlifyIdentity.open("signup");
+
+      netlifyIdentity.on("login", () => {
+        netlifyIdentity.close();
+        window.location.href = "/admin/";
+      });
+    </script>
+  </body>
+</html>
