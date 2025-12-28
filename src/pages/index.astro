@@ -2,18 +2,46 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout
-  title="AssoSimple — Numérique simple pour associations"
-  description="Guides concrets pour site d'asso, organisation, Google Business, et continuité."
+  title="AssoSimple — Le numérique clair pour les associations"
+  description="Un blog pratique pour aider les associations à avoir un site simple, durable et maintenable."
 >
+
+  <!-- HERO -->
   <section class="hero">
-    <h1>Le numérique simple pour les associations.</h1>
-    <p>
-      Des guides courts, pratiques, et durables pour éviter le bazar : site qui tient,
-      organisation d'événements, visibilité locale, sauvegardes.
+    <h1>
+      Le numérique clair<br />
+      pour les associations.
+    </h1>
+
+    <p class="hero-text">
+      Des articles concrets pour créer un site qui tient dans le temps,
+      organiser l’information simplement, et éviter les usines à gaz.
     </p>
-    <p>
-      <a class="btn" href="/blog/">Voir le blog</a>
-      <a class="btn" href="/contact/" style="margin-left:10px;">Me contacter</a>
+
+    <p class="hero-actions">
+      <a class="btn primary" href="/blog/">Lire le blog</a>
+      <a class="btn" href="/contact/">Me contacter</a>
     </p>
   </section>
+
+  <!-- SEPARATEUR -->
+  <hr />
+
+  <!-- A PROPOS -->
+  <section class="about">
+    <h2>À propos</h2>
+
+    <p>
+      Je travaille avec des associations depuis des années.
+      Le constat est toujours le même : des outils trop complexes,
+      dépendants d’une seule personne, qui finissent abandonnés.
+    </p>
+
+    <p>
+      Ce site est né pour proposer une autre approche :
+      <strong>moins de technique, plus de clarté</strong>.
+      Des solutions simples, compréhensibles, et transmissibles.
+    </p>
+  </section>
+
 </BaseLayout>

@@ -22,6 +22,55 @@ const { title = "AssoSimple", description = "" } = Astro.props;
       .btn { display: inline-block; padding: 10px 12px; border: 1px solid #e5e5e5; border-radius: 10px; color: #111; }
       .btn:hover { border-color: #cfcfcf; text-decoration: none; }
       footer { border-top: 1px solid #eee; color: #666; font-size: 14px; }
+      .hero {
+  padding: 48px 0 32px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  max-width: 640px;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 48px 0;
+}
+
+.about {
+  max-width: 720px;
+}
+
+.about h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.about p {
+  color: #444;
+}
+
     </style>
   </head>
   <body>
