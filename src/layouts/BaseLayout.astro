@@ -65,24 +65,33 @@ const { title = "AssoSimple", description = "" } = Astro.props;
         text-decoration: underline;
       }
 
-      /* Boutons */
-      .btn {
-        display: inline-block;
-        padding: 10px 12px;
-        border: 1px solid #e5e5e5;
+      /* Boutons (visibles, robustes) */
+      a.btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 14px;
+        border: 1px solid #d4d4d4;
         border-radius: 10px;
+        background: #fff;
         color: #111;
       }
 
-      .btn:hover {
-        border-color: #cfcfcf;
+      a.btn:hover {
+        background: #f7f7f7;
+        border-color: #bdbdbd;
         text-decoration: none;
       }
 
-      .btn.primary {
+      a.btn.primary {
         background: var(--accent);
-        color: #fff;
         border-color: var(--accent);
+        color: #fff;
+      }
+
+      a.btn.primary:hover {
+        filter: brightness(0.95);
+        text-decoration: none;
       }
 
       /* Hero */
