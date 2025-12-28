@@ -1,7 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: fredchanu/asso-simple
   branch: main
 
+  
 media_folder: "src/content/uploads"
 public_folder: "/uploads"
 
