@@ -1,16 +1,19 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="AssoSimple — Numérique simple pour associations"
+  description="Guides concrets pour site d'asso, organisation, Google Business, et continuité."
+>
+  <section class="hero">
+    <h1>Le numérique simple pour les associations.</h1>
+    <p>
+      Des guides courts, pratiques, et durables pour éviter le bazar : site qui tient,
+      organisation d'événements, visibilité locale, sauvegardes.
+    </p>
+    <p>
+      <a class="btn" href="/blog/">Voir le blog</a>
+      <a class="btn" href="/contact/" style="margin-left:10px;">Me contacter</a>
+    </p>
+  </section>
+</BaseLayout>
