@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="Contact — AssoSimple" description="Contact pour aide ponctuelle, audit, ou mise en place.">
+  <h1>Contact</h1>
+  <p>
+    Décris ta situation en quelques lignes : type d’asso, ce qui bloque, lien du site (si existant),
+    et ce que tu veux obtenir.
+  </p>
+
+  <form method="POST" data-netlify="true" name="contact">
+    <input type="hidden" name="form-name" value="contact" />
+
+    <p>
+      <label>
+        Nom<br />
+        <input name="name" required style="width:100%;max-width:520px;padding:10px;border:1px solid #e5e5e5;border-radius:10px;" />
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Email<br />
+        <input name="email" type="email" required style="width:100%;max-width:520px;padding:10px;border:1px solid #e5e5e5;border-radius:10px;" />
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Message<br />
+        <textarea name="message" rows="7" required style="width:100%;max-width:720px;padding:10px;border:1px solid #e5e5e5;border-radius:10px;"></textarea>
+      </label>
+    </p>
+
+    <p>
+      <button class="btn" type="submit">Envoyer</button>
+    </p>
+
+    <p style="color:#666;font-size:14px;">
+      (Le formulaire fonctionnera automatiquement une fois déployé sur Netlify.)
+    </p>
+  </form>
+</BaseLayout>

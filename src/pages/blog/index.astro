@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog"))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+<BaseLayout title="Blog — AssoSimple" description="Articles pratiques pour associations.">
+  <h1>Blog</h1>
+
+  {posts.length === 0 ? (
+    <p>Aucun article pour le moment.</p>
+  ) : (
+    <ul>
+      {posts.map(post => (
+        <li style="margin-bottom:24px;">
+          <a href={`/blog/${post.slug}/`}>
+            <strong>{post.data.title}</strong>
+          </a>
+          <div style="color:#666;font-size:14px;">
+            {post.data.pubDate.toLocaleDateString("fr-FR")}
+          </div>
+          {post.data.description && <p>{post.data.description}</p>}
+        </li>
+      ))}
+    </ul>
+  )}
+</BaseLayout>
