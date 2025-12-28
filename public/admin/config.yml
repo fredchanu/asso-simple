@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: fredchanu/asso-simple
   branch: main
+  base_url: https://assosimple.netlify.app
+  auth_endpoint: /.netlify/functions/auth
+
 
 
 media_folder: "src/content/uploads"
