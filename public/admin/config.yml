@@ -1,11 +1,6 @@
 backend:
-  name: github
-  repo: fredchanu/asso-simple
+  name: git-gateway
   branch: main
-  base_url: https://assosimple.netlify.app
-  auth_endpoint: auth
-
-
 
 media_folder: "src/content/uploads"
 public_folder: "/uploads"
