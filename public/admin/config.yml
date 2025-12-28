@@ -2,8 +2,10 @@ backend:
   name: github
   repo: fredchanu/asso-simple
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
-  
+
 media_folder: "src/content/uploads"
 public_folder: "/uploads"
 
